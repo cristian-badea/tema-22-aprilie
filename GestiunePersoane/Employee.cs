@@ -55,7 +55,7 @@ namespace GestiunePersoane
                 if (concediu.startingDate.Year == anConcediu)
                 {
                     
-                    Console.WriteLine("Concediu incepand pe " + concediu.startingDate.Date.ToString("dd/MM/yyyy") + " pe durata de " + concediu.duration + " zile pe motiv de: " + concediu.getLeaveTypeDescription(concediu.leaveType));
+                    Console.WriteLine("Concediu incepand pe " + concediu.startingDate.Date.ToString("dd/MM/yyyy") + " pe durata de " + concediu.duration + " zile pe motiv de: " + concediu.leaveType);
                 }
             }
         }

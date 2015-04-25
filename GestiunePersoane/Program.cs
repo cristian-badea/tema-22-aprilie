@@ -21,14 +21,14 @@ namespace GestiunePersoane
             //testam metoda AddNewLeave
             //cazul 1 - concediu mai mic decat zile disponibile, ar tb sa mearga
             DateTime ziuaConcediu1 = new DateTime(2015,3,20);
-            Leave concediu1 = new Leave(ziuaConcediu1, 10, leaveTypeEnum.med);
+            Leave concediu1 = new Leave(ziuaConcediu1, 10, leaveTypeEnum.medical);
             angajat1.AddNewLeave(concediu1);
 
             angajat1.DisplayInfo();
 
             //cazul 2 - concediu mai mare decat zile disponibile ( acum avem 25 de zile disponibile )
             DateTime ziuaConcediu2 = new DateTime(2015, 4, 20);
-            Leave concediu2 = new Leave(ziuaConcediu1, 30, leaveTypeEnum.hol);
+            Leave concediu2 = new Leave(ziuaConcediu1, 30, leaveTypeEnum.holiday);
             try
             {
                 angajat1.AddNewLeave(concediu2);
@@ -42,13 +42,13 @@ namespace GestiunePersoane
 
             //mai adaugam niste concedii
             DateTime ziuaConcediu3 = new DateTime(2015, 4, 10);
-            Leave concediu3 = new Leave(ziuaConcediu3, 7, leaveTypeEnum.hol);
+            Leave concediu3 = new Leave(ziuaConcediu3, 7, leaveTypeEnum.holiday);
             angajat1.AddNewLeave(concediu3);
 
             angajat1.DisplayInfo();
 
             DateTime ziuaConcediu4 = new DateTime(2015, 5, 10);
-            Leave concediu4 = new Leave(ziuaConcediu4, 3, leaveTypeEnum.ot);
+            Leave concediu4 = new Leave(ziuaConcediu4, 3, leaveTypeEnum.other);
             angajat1.AddNewLeave(concediu4);
 
             angajat1.DisplayInfo();
