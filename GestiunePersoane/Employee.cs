@@ -24,7 +24,7 @@ namespace GestiunePersoane
             this.listaConcedii = new List<Leave>();
         }
 
-        public void DisplayInfo()
+        public override void DisplayInfo()
         {
             Console.WriteLine(lastName + " " + firstName + " has a salary : " + salary + "euro and " + availableDaysOff + " available days off");
         }
@@ -54,7 +54,8 @@ namespace GestiunePersoane
             {
                 if (concediu.startingDate.Year == anConcediu)
                 {
-                    Console.WriteLine("Concediu incepand pe " + concediu.startingDate.Date.ToString("dd/MM/yyyy") + " pe durata de " + concediu.duration + " zile pe motiv de: " + concediu.leaveType);
+                    
+                    Console.WriteLine("Concediu incepand pe " + concediu.startingDate.Date.ToString("dd/MM/yyyy") + " pe durata de " + concediu.duration + " zile pe motiv de: " + concediu.getLeaveTypeDescription(concediu.leaveType));
                 }
             }
         }

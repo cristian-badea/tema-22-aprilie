@@ -11,6 +11,12 @@ namespace GestiunePersoane
         protected string lastName;
         protected string firstName;
         protected DateTime dateOfBirth;
+
+        public virtual void DisplayInfo()
+        {
+            Console.WriteLine(lastName + " " + firstName + " was born on " + dateOfBirth.Date.ToString("dd/MM/yyyy"));
+        }
     }
    
 }
+
