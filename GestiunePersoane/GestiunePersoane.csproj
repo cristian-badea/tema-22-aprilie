@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.cs" />
+    <Compile Include="ExistingLeaveInterval.cs" />
     <Compile Include="Leave.cs" />
     <Compile Include="NegativeLeaveDays.cs" />
     <Compile Include="Person.cs" />
